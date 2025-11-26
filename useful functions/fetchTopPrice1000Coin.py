@@ -1,5 +1,5 @@
 import requests
-
+#функция возвращает словать из 1000 первых криптовалют по капитализации, что бы получить цену конкретной, нужно обратиться по символу монеты, напримем по ['ape']
 def fetchTop1000Cryptos(vs_currency="usd"):
     url = "https://api.coingecko.com/api/v3/coins/markets"
     all_tokens = []
