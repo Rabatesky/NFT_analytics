@@ -18,7 +18,7 @@ def get_max_offer(collection_slug: str, api_key: str):
         return None
 
     price_offers = []
-    for item in new_data:
+    for item in data:
         price_offer = float(item["price"]["value"])/item["remaining_quantity"]/10 ** int(item["price"]["decimals"])
         price_offers.append(price_offer)
 
