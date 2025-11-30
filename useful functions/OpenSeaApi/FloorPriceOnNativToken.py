@@ -13,7 +13,6 @@ def get_floor_price(collection_slug: str, api_key: str):
         return None
     data = response.json()
 
-    # В офферах ключ обычно называется "offers"
     stats = float(data["total"]["floor_price"])
 
     if not stats:
