@@ -12,7 +12,10 @@ def get_floor_price(collection_slug: str, api_key: str):
         print("Ошибка запроса:", response.text)
         return None
     data = response.json()
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2020e94c1c9c5f3360b6233efc97d6596cd764d4
     stats = float(data["total"]["floor_price"])
 
     if not stats:
